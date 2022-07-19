@@ -1,0 +1,912 @@
+/* Some general CSS */
+
+*, body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    background-color: #0C1027;
+}
+
+/* Main boy CSS */
+
+#main-head{
+    background-color: #0C1027;
+    width: 100%;
+    padding: 1rem 2rem 0px 2rem;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 6px 2px #0C1027;
+    position: sticky;
+    top: 0px;
+    z-index: 100; 
+    display: flex;
+    justify-content: space-between;   
+}
+
+/* Key frame for music icon on top left corner */
+
+@keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+}
+  
+
+.heartbeat {
+	animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+/* Navbar CSS */
+
+#name-icon{
+    display: inline-block;
+}
+
+#name-icon i{
+    font-size: 3rem;
+    width: auto;
+    display: inline-block;
+}
+
+#icon-sub{
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#fav{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#fav p{
+    font-size: 1.4rem;
+    padding-top: 8px;
+}
+
+#fav p a:hover{
+    text-decoration: underline;
+    color: lightgray;
+}
+
+#search{
+    background-color: #12193E;
+    width: 30vw;
+    display: inline-block;
+    border-radius: 5px;
+    vertical-align: top;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#search i{
+    font-size: 25px;
+    padding: 8px;
+}
+
+#search #inp{
+    width: 75%;
+    display: inline-block;
+    
+    font-size: 12px;
+}
+
+#search #inp input{
+    background-color: #12193E;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    border-style: none;
+}
+
+#search #mic{
+    display: inline-block;
+}
+
+/* Keyframe for Notification icon */
+
+@keyframes shake-bottom {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+    }
+    10% {
+      transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+    80% {
+      transform: rotate(-2deg);
+    }
+    90% {
+      transform: rotate(2deg);
+    }
+}
+ 
+.shake-bottom {
+	animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+#notf{
+    display: inline-block;
+}
+
+#bell{
+    display: inline-block;
+    font-size: 22px;
+    padding: 6px;
+    padding-top: 8px;
+    margin: 10px;
+    margin-top: 0px;
+    vertical-align: top;
+}
+
+#profile{
+    background-image: url("./media/profile_picture.png");
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6px;
+}
+
+/* Body CSS */
+
+main{
+    margin: 50px auto;
+    width: 85vw;
+}
+
+#left{
+    width: 56vw;
+    display: inline-block;
+}
+
+#right{
+    width: 28vw;
+    display: inline-block;
+    height: 120vh;
+    vertical-align: top;
+    box-sizing: border-box;
+    background-color: #0C1027;
+}
+
+/* Left side content CSS */
+
+/* Header of page */
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    margin-bottom: 5rem;
+}
+
+.top-c{
+    width: 33%;
+    height: 23vh;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.top-c:hover{
+    transform: scale(1.3);
+    transition: .3s linear;
+}
+
+#div1{
+    background-image: url("./media/crousel/carousel1.jpg");
+}
+
+#div2{
+    background-image: url("./media/crousel/carousel2.jpg");
+}
+
+#div3{
+    background-image: url("./media/crousel/carousel3.jpg");
+}
+
+/* Latest Release Section CSS */
+
+#latest{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+.latest-div{
+    width: 50%;
+    height: 20vh;
+    padding: .5rem;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#l1{
+    background-image: url("./media/songs/DaBaby.jpg");
+}
+
+#l2{
+    background-image: url("./media/songs/havana.jpg");
+}
+
+#l3{
+    background-image: url("./media/songs/willow.jpeg");
+}
+
+#l4{
+    background-image: url("./media/songs/Weeknd.jpg");
+}
+
+.image{
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+
+.image i{
+    font-size: 2.5rem;
+    padding-top: 1.9rem;
+    padding-left: 2.6rem;
+    visibility: hidden;
+}
+
+.image:hover{
+    opacity: 0.7;
+}
+
+.image:hover i{
+    visibility: visible;
+}
+
+.info{
+    width: 69%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+}
+
+.name{
+    width: 65%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.duration{
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+}
+
+.box a i{
+    font-size: 18px;
+    margin-left: 6px;
+}
+
+/* Popular Artist section CSS */
+
+.popular{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.popular-singer{
+    margin: 20px 5px;
+    height: 20vh;
+    display: inline-block;
+    width: 9.4vw;
+    vertical-align: top;
+}
+
+.popular-singer h4{
+    text-align: center;
+}
+
+.pop{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.play-icon{
+    width: 100%;
+    height: 100%;
+}
+
+.pop i{
+    font-size: 2.5rem;
+    padding-top: 2.4rem;
+    padding-left: 3.2rem;
+    visibility: hidden;
+}
+
+.pop:hover{
+    opacity: 0.7;
+}
+
+.pop:hover i{
+    visibility: visible;
+}
+
+#s1{
+    background-image: url("./media/popular-artists/adele.jpg");
+}
+
+#s2{
+    background-image: url("./media/popular-artists/billie.jpg");
+}
+
+#s3{
+    background-image: url("./media/popular-artists/bruno.jpg");
+}
+
+#s4{
+    background-image: url("./media/popular-artists/Camila.jpg");
+}
+
+#s5{
+    background-image: url("./media/popular-artists/drake.jpg");
+}
+
+#s6{
+    background-image: url("./media/popular-artists/ed-sheeran.jpg");
+}
+
+#s7{
+    background-image: url("./media/popular-artists/eminem.jpg");
+}
+
+#s8{
+    background-image: url("./media/popular-artists/Katy-perry.jpg");
+}
+
+#s9{
+    background-image: url("./media/popular-artists/nicki-minaj.jpg");
+}
+
+#s10{
+    background-image: url("./media/popular-artists/sixnine.jpg");
+}
+
+/* Stations section CSS */
+
+#station{
+    margin: 50px 0px;
+    width: 100%;
+    height: 25vh;
+    background-color: #101642;
+    padding: 1.5rem;
+    /* padding-left: 3rem; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat{
+    width: 14%;
+    margin: 0px 6px;
+    box-sizing: border-box;
+    height: 95%;
+    border-radius: 50%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    vertical-align: top;
+    text-align: center;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#station1{
+    background-image: url("./media/music-themes/chill.jpg");
+}
+
+#station2{
+    background-image: url("./media/music-themes/pop.jpg");
+}
+
+#station3{
+    background-image: url("./media/music-themes/love.jpg");
+}
+
+#station4{
+    background-image: url("./media/music-themes/retro.jpg");
+}
+
+#station5{
+    background-image: url("./media/music-themes/rock.jpg");
+}
+
+#station6{
+    background-image: url("./media/music-themes/workout.jpg");
+}
+
+.stat h2{
+    position: relative;
+    top: 44%;
+}
+
+/* Media Query- Breakpoint 1 at width of 755 px */
+
+@media(max-width:755px){
+    #latest{
+        flex-wrap: nowrap;
+        display: block;
+    }
+
+    .latest-div{
+        width: 100%;
+    }
+
+    .stat h2{
+        font-size: 1rem;
+    }
+
+    #station{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .popular-singer h4{
+        text-align: center;
+    }
+}
+
+/* Special Music type section css */
+
+#type{
+    width: 100%;
+    height: 27vh;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.type-pic-box{
+    width: 31.5%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.type-pic{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.type-pic:hover{
+    transform: scale(1.4);
+}
+
+#type1{
+    background-image: url("./media/music-themes-2/electronic.jpg");
+}
+
+#type2{
+    background-image: url("./media/music-themes-2/party.jpg");
+}
+
+#type3{
+    background-image: url("./media/music-themes-2/road.jpg");
+}
+
+.type-pic h2{
+    position: relative;
+    top: 45%;
+    text-align: center;
+}
+
+/* Latest English Songs section CSS */
+
+.latest-english{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.english{
+    width: 100%;
+    height: 30vh;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.song{
+    height: 100%;
+    display: inline-block;
+    width: 14%;
+    cursor: pointer;
+}
+
+.cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eng-img{
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+}
+
+#eng1{
+    background-image: url("./media/latest-english/I\'ll-Wait.jpg");
+}
+
+#eng2{
+    background-image: url("./media/latest-english/ily.jpg");
+}
+
+#eng3{
+    background-image: url("./media/latest-english/let-me-go.jpg");
+}
+
+#eng4{
+    background-image: url("./media/latest-english/qurantine-clean.jpg");
+}
+
+#eng5{
+    background-image: url("./media/latest-english/roar.jpg");
+}
+
+#eng6{
+    background-image: url("./media/latest-english/toosie-slide.jpg");
+}
+
+/* Latest Hindi Songs section CSS */
+
+.latest-hindi{
+    width: 100%;
+}
+
+#hin1{
+    background-image: url("./media/latest-hindi/baarish.jpeg");
+}
+
+#hin2{
+    background-image: url("./media/latest-hindi/galiyaan.jpg");
+}
+
+#hin3{
+    background-image: url("./media/latest-hindi/giveme-some-sunshine.jpg");
+}
+
+#hin4{
+    background-image: url("./media/latest-hindi/kaun-tujhe.jpg");
+}
+
+#hin5{
+    background-image: url("./media/latest-hindi/tera-ban-jaunga.jpg");
+}
+
+#hin6{
+    background-image: url("./media/latest-hindi/tere-sang-yara.jpg");
+}
+
+/* Right side content CSS */
+
+/* Playlist CSS */
+
+#side-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4vh;
+    box-shadow: 1px 6px 6px 4px #0C1027;
+    height: 6%;
+    z-index: 3;
+}
+
+#side-top h1{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#side-top div i{
+    padding-top: 50%;
+    padding-right: 4px;
+    font-size: 1.4rem;
+    color: #44BDA6;
+}
+
+#side-list{
+    overflow-y: auto;
+    width: 100%;
+    height: 90%;
+    padding: 0px 1rem;
+    padding-top: 10px;
+
+}
+
+.list-song{
+    width: 100%;
+    box-sizing: border-box;
+    height: 12vh;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.list-song-info{
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+}
+
+.list-song-info p{
+    color:#93A8B3;
+    display: inline-block;
+}
+
+.song-img{
+    display: inline-block;
+    height: 100%;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 0px 1rem;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.song-name{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.heart{
+    display: inline-block;
+    position: relative;
+    left: 4vw;
+    cursor:pointer;
+}
+
+#song-img1{
+    background-image: url("./media/playlist/alone.jpg");
+}
+
+#song-img2{
+    background-image: url("./media/playlist/after.jpg");
+}
+
+#song-img3{
+    background-image: url("./media/playlist/stoney.jpg");
+}
+
+#song-img4{
+    background-image: url("./media/playlist/beer.jpg");
+}
+
+/* Media Query- Breakpoint 2 at width 1130px */
+
+@media(max-width:1130px){
+    #right{
+        display: block;
+        width: 100%;
+    }
+    #left{
+        width: 100%;
+    }
+    #search{
+        width: 0px;
+        box-sizing: content-box;
+        padding: 0px;
+    }
+    #search i{
+        font-size: 0px;
+    }
+}
+
+/* Footer Section CSS */
+
+footer {
+    /* visibility: hidden; */
+	position: sticky;
+	bottom: 0px;
+	width: 100vw;
+	height: 60px;
+	background-color: #282828;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding: 0px 3%;
+	box-sizing: border-box;
+	z-index: 6;
+}
+
+/* footer is divided into 3 parts */
+/* 1. first part of the footer */
+.active-song-description {
+	/* border:1px solid white; */
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/* the current song which is being played, this is the image container for that. */
+#song-image {
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+/* current song image */
+#song-image img {
+	width: 100%;
+	height: 100%;
+}
+/* heart and ban icon */
+.heart-and-ban-icon {
+	height: 100%;
+	padding-top: 4%;
+}
+/* song decscription */
+.song-desc {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.song-desc div:nth-child(1) {
+	font-size: 14px;
+}
+/* song author */
+.song-desc div:nth-child(2) {
+	font-size: 12px;
+}
+
+/* 2. Second part of the footer*/
+.player {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+/* this is the song-duration slider */
+#slider {
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+/* ////////// */
+.time {
+	margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+	width: 100%;
+}
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+	opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+
+/* third part of the footer */
+/* this contains the extra icons and slider for volume */
+/* this is also a container */
+.extras {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
